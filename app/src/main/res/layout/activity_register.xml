@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7F4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvRegisterTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="إنشاء حساب جديد"
+                android:textColor="#2E5A44"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:id="@+id/tvRegisterSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ابدأ بتنظيم ورعاية نباتاتك اليوم"
+                android:textColor="#667C70"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="32dp" />
+
+            <EditText
+                android:id="@+id/etRegisterName"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="الاسم الكامل"
+                android:inputType="textPersonName"
+                android:background="@android:drawable/edit_text"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:gravity="right|center_vertical"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/etRegisterUsername"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="اسم المستخدم"
+                android:inputType="text"
+                android:background="@android:drawable/edit_text"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:gravity="right|center_vertical"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/etRegisterEmail"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="البريد الإلكتروني"
+                android:inputType="textEmailAddress"
+                android:background="@android:drawable/edit_text"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:gravity="right|center_vertical"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/etRegisterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="كلمة المرور"
+                android:inputType="textPassword"
+                android:background="@android:drawable/edit_text"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:gravity="right|center_vertical"
+                android:layout_marginBottom="32dp" />
+
+            <Button
+                android:id="@+id/btnRegisterSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="تسجيل الحساب"
+                android:backgroundTint="#3B7A57"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/tvGoToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لديك حساب بالفعل؟ سجل دخولك"
+                android:textColor="#3B7A57"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

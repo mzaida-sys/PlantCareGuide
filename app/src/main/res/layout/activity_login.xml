@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7F4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layoutDirection="rtl"
+
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvLoginTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مرحباً بك مجدداً"
+                android:textColor="#2E5A44"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="40dp" />
+
+            <EditText
+                android:id="@+id/etLoginIdentifier"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="البريد الإلكتروني أو اسم المستخدم"
+                android:inputType="textEmailAddress"
+                android:background="@android:drawable/edit_text"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:gravity="right|center_vertical"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/etLoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="كلمة المرور"
+                android:inputType="textPassword"
+                android:background="@android:drawable/edit_text"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:gravity="right|center_vertical"
+                android:layout_marginBottom="12dp" />
+
+            <CheckBox
+                android:id="@+id/cbRememberMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تذكرني في المرات القادمة"
+                android:textColor="#667C70"
+                android:textSize="15sp"
+                android:layoutDirection="rtl"
+                android:textDirection="rtl"
+                android:gravity="right|center_vertical"
+                android:layout_marginBottom="28dp" />
+
+            <Button
+                android:id="@+id/btnLoginSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="تسجيل الدخول"
+                android:backgroundTint="#3B7A57"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/tvGoToRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ليس لديك حساب؟ أنشئ حسابك الآن"
+                android:textColor="#3B7A57"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

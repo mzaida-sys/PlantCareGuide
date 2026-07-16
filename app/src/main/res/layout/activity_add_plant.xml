@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7F4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="إضافة نبتة جديدة للكتالوج"
+                android:textColor="#2E5A44"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اسم النبتة:"
+                android:textColor="#2E5A44"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:gravity="right"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etAddPlantName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="مثال: نبتة البوتس، صبار الألوفيرا..."
+                android:background="@android:drawable/edit_text"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:inputType="textPersonName"
+                android:gravity="right|center_vertical"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="تصنيف الفئة:"
+                android:textColor="#2E5A44"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:gravity="right"
+                android:layout_marginBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/spAddPlantCategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="جدول الري (عدد الأيام):"
+                android:textColor="#2E5A44"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:gravity="right"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etAddWaterSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="مثال: كل 3 أيام، مرة أسبوعياً..."
+                android:background="@android:drawable/edit_text"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:inputType="text"
+                android:gravity="right|center_vertical"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="حاجة النبتة للإضاءة/الشمس:"
+                android:textColor="#2E5A44"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:gravity="right"
+                android:layout_marginBottom="8dp" />
+
+
+            <RadioGroup
+                android:id="@+id/rgSunlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layoutDirection="rtl"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/rbSunIndirect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ضوء غير مباشر / ظل ⛅"
+                    android:textColor="#333333"
+                    android:checked="true"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="right|center_vertical" />
+
+                <RadioButton
+                    android:id="@+id/rbSunDirect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="شمس مباشرة ☀️"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:gravity="right|center_vertical" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="إرشادات وملاحظات إضافية:"
+                android:textColor="#2E5A44"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:gravity="right"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etAddPlantNotes"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="اكتب هنا أي نصائح أو ملاحظات خاصة برعاية النبتة..."
+                android:background="@android:drawable/edit_text"
+                android:padding="12dp"
+                android:gravity="right|top"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="6dp"/>
+
+
+            <Button
+                android:id="@+id/btnSavePlant"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="💾 حفظ النبتة الجديدة"
+                android:backgroundTint="#3B7A57"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnCancelAdd"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="إلغاء وتراجع"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#A32A2A"
+                android:textSize="16sp"
+                app:strokeColor="#A32A2A"
+                app:strokeWidth="1dp"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
