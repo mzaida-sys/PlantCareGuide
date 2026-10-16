@@ -34,3 +34,7 @@ PlantCareGuide is a mobile Android application built to assist users in tracking
 ## Author
 
 - GitHub Profile: https://github.com/mzaida-sys
+
+- 
+## Application Demo
+https://github.com/mzaida-sys/PlantCareGuide/releases/download/v1.0.0/Screen.Recording.2026-07-16.190614.1.mp4
